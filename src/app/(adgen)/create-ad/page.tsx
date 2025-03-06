@@ -19,16 +19,16 @@ const Page = () => {
     const handleContinue = () => {
       if (selectedAdType) {
         console.log(`Selected ad type: ${selectedAdType}`);
-        router.push(`/create-ad/ad-form?type=${selectedAdType}`);
+        router.push(`/ad-form?type=${selectedAdType}`);
       }
     };
 
 
   return (
     <>
-      <h2 className="text-xl md:text-2xl font-bold mb-6">Select Ad Type</h2>
+      <h2 className="text-xl text-center md:text-2xl font-bold mb-6">Select Ad Type</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div className="flex justify-center items-center gap-6 mb-8">
         <div
           className={`border p-6 rounded-lg cursor-pointer transition-all flex justify-between  ${
             selectedAdType === "image"
@@ -119,7 +119,7 @@ const Page = () => {
   </div>
 </div> */}
 
-        <div className="border p-6 rounded-lg flex flex-col border-gray-300 bg-gray-100 opacity-50 cursor-not-allowed">
+ {/*        <div className="border p-6 rounded-lg flex flex-col border-gray-300 bg-gray-100 opacity-50 cursor-not-allowed">
           <Image src="/video.svg" alt="Video svg" width={30} height={30} />
           <div className="mt-4 flex flex-wrap items-center gap-2">
             <h3 className="font-semibold text-base">Video Ad</h3>
@@ -130,12 +130,12 @@ const Page = () => {
           <p className="text-sm text-gray-600">
             Animated ads with motion and sound.
           </p>
-        </div>
+        </div> */}
       </div>
 
-      <div className="flex justify-end">
+      <div className="flex  justify-center">
         <button
-          className={`px-6 py-3 rounded-md transition-colors cursor-pointer ${
+          className={`w-fit px-30 py-3 rounded-md transition-colors cursor-pointer ${
             selectedAdType
               ? "bg-[#B800B8] text-white hover:bg-[#960096]"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"

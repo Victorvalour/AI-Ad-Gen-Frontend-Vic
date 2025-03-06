@@ -35,7 +35,7 @@ export default function RootLayout({
         <QueryProvider>
           <Header />
           <TopProgressBarProvider>{children}</TopProgressBarProvider>
-          <Footer />
+        
         </QueryProvider>
       </body>
     </html>

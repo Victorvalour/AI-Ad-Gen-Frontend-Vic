@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import AuthNav from "./components/AuthNav";
-import AuthFooter from "./components/AuthFooter";
+//import AuthNav from "./components/AuthNav";
+//import AuthFooter from "./components/AuthFooter";
 
 
 //import { useRouter } from "next/router";
@@ -30,10 +30,10 @@ export default function AuthLayout({
       <body className={inter.className}>
 
       <div className="flex flex-col min-h-screen items-center gap-8 bg-[#F9FAFB]">
-        <AuthNav />
+       {/*  <AuthNav />
           <main className="">{children}</main>
 
-        <AuthFooter />
+        <AuthFooter /> */}
         </div>
  
     
